@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://)
+- [Solution]([https://](https://www.frontendmentor.io/solutions/tip-calculator-app-S1XlHPVN9))
 - [Live Site](https://risclover.github.io/tip-calculator-app)
   
 ## My process
