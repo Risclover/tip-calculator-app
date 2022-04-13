@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+input {
+    font-size: 24px;
+    text-align: right;
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    padding: 5px 15px;
+    width: 335px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 3px solid hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+}
+
+input:focus, input:active, input:hover {
+    outline: 0;
+    border: 3px solid hsl(172, 67%, 45%) !important;
+}
+
+::placeholder {
+    color: hsl(183, 100%, 15%);
+}
+
+.logo {
+    margin: 0 auto 80px auto;
+    text-align: center;
+}
+
+.main-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.input-side {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.input-side p {
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+.bill-input-box, .people-input-box {
+    position: relative;
+}
+
+.dollar, .person {
+    position: absolute;
+    width: 12px;
+    top: 17px;
+    left: 20px;
+}
+
+.output-side {
+    width: 50%;
+    padding: 15px;
+}
+
+.people-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-box {
+    margin-bottom: 20px;
+}
+
+.btn-box {
+    width: 100%;
+}
+
+.tip-btn, .custom  {
+    font-size: 24px;
+    border: 0;
+    margin: 5px 0;
+    outline: 0;
+    height: 50px;
+    width: 115px;
+    background-color:hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    border: 3px solid hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.tip-btn:hover {
+    background-color:hsl(185, 41%, 84%);
+    border-color: hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+
+.custom-stuff {
+    display: inline-block;
+    padding: 0;
+    margin: 5px 0;
+    width: 115px;
+    height: 50px;
+}
+
+.custom {
+    background-color: hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+    font-weight: 700;
+    border: 3px solid hsl(189, 41%, 97%);
+    margin: 0;
+}
+
+.custom-tip {
+    display: none;
+    border: 3px solid hsl(172, 67%, 45%);
+    margin: 0;
+    width: 104px;
+    height: 44px;
+    padding: 0;
+    padding-right: 5px;
+}
+
+.zero {
+    display: none;
+    color: rgb(205, 71, 9) !important;
+}
+
+.people-error {
+    border: 3px solid rgb(205, 71, 9);
+}
+
+.people-error:hover, .people-error:active, .people-error:focus {
+    border: 3px solid rgb(205, 71, 9) !important;
+}
+
+.tip-active {
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+    font-weight: 700;
+    border-color:hsl(172, 67%, 45%);
+}
+
+.output-side {
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 15px;
+    color: white;
+    padding: 40px;
+    font-weight: 700;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.amt {
+    color:hsl(172, 67%, 45%);
+    font-size: 40px;
+}
+
+.per-person {
+    color: hsl(184, 14%, 56%);
+    font-size: 12px;
+}
+
+.output-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reset {
+    width: 100%;
+    color:hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%);
+    border: 0;
+    outline: 0;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.reset:hover {
+    background-color:hsl(185, 41%, 84%);
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .input-side {
+        margin-right: 30px;
+    }
+    body,html {
+        padding-top: 30px;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .tip-btn, .custom-stuff {
+        width: 120px;
+        margin: 5px;
+    }
+
+    .custom {
+        width: 120px;
+    }
+
+    .custom-tip {
+        width: 110px;
+    }
+    input {
+        width: 90%;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    body,html {
+        min-height: 100%;
+    }
+    .main-container {
+        padding: 30px;
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    main {
+        height: auto;
+    }
+    .input-side {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .output-side {
+        width: auto;
+        padding: 30px;
+        overflow: auto;
+    }
+
+    input {
+        width: 260px;
+    }
+
+    .tip-btn  {
+        width: 140px;
+        margin: 8px 0;
+    }
+
+    .custom {
+        width: 140px;
+    }
+
+    .custom-tip {
+        width: 130px;
+    }
+
+    .custom-stuff {
+        width: 140px;
+        margin: 8px 0;
+        padding: 0;
+    }
+
+    .logo {
+        margin: 0px auto 40px auto;
+    }
+}

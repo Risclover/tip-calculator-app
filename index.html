@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- Title -->
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<main>
+  <img src="./images/logo.svg" alt="logo" class="logo">
+  <div class="main-container">
+    <div class="input-side">
+      <div class="bill-box input-box">
+        <p>Bill</p>
+        <div class="bill-input-box">
+          <img src="./images/icon-dollar.svg" class="dollar" alt="dollar icon">
+          <input type="text" class="bill" placeholder="0">
+        </div>
+      </div>
+      <div class="select-tip input-box">
+        <p>Select Tip %</p>
+        <div class="btn-box">
+          <button value=".05" class="tip-btn">5%</button>
+          <button value=".1" class="tip-btn">10%</button>
+          <button value=".15" class="tip-btn">15%</button>
+          <button value=".25" class="tip-btn">25%</button>
+          <button value=".5" class="tip-btn">50%</button>
+          <div class="custom-stuff">
+            <input class="custom-tip" placeholder="0" type="text">
+            <button class="custom">Custom</button>
+          </div>
+        </div>
+      </div>
+      <div class="people-box input-box">
+        <div class="people-labels">
+          <p>Number of People</p>
+          <p class="zero">Can't be zero</p>
+        </div>
+        <div class="people-input-box">
+          <img src="./images/icon-person.svg" class="person" alt="person icon">
+          <input type="text" class="people" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="output-side">
+      <div>
+      <div class="tip-amount-box output-box">
+        <div class="label">
+          <p>Tip Amount</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <span class="tip-amount amt">$0.00</span>
+      </div>
+      <div class="total-box output-box">
+        <div class="label">
+          <p>Total</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <span class="total-amount amt">$0.00</span>
+      </div>
+      </div>
+      <button class="reset">RESET</button>
+    </div>
+  </div>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>
